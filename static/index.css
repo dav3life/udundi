@@ -1,0 +1,83 @@
+html, body {
+    
+    padding: 0;
+    background-color: #611818;
+
+
+}
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.col-md-3 {
+    margin-top: 25% !important;
+    padding-left: 180px !important;
+    z-index: 100;
+}
+
+#app{
+	background-color: #611818;
+}
+
+.custom{
+	padding-top: 100%;
+	background-image: url('woods.png') !important;
+	  background-repeat: no-repeat;
+     background-attachment: fixed;
+	background-size: cover !important;
+}
+
+
+.customButton{
+  color: white;
+  height: 50px;
+  width:50%;
+  background-color: #611818;
+  background-image:
+    linear-gradient(
+      to right, 
+      #611818, white
+    );
+}
+
+
+
+.customDiv{
+background-color: white; 
+width: 500px; 
+height: 600px; 
+margin-top: -300px; 
+margin-left: 30px; 
+padding: 25px 25px 25px 40px;
+}
+
+
+
+.grad{
+  height: 2px;
+  width:50%;
+  background-color: #611818;
+  background-image:
+    linear-gradient(
+      to right, 
+      #611818, white
+    );
+
+
+}
+
