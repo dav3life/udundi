@@ -2,8 +2,6 @@ html, body {
     
     padding: 0;
     background-color: #611818;
-
-
 }
 
 .bounce-enter-active {
@@ -23,6 +21,24 @@ html, body {
     transform: scale(1);
   }
 }
+
+.titleAnime{ 
+  position: relative;
+  animation-name: titleAnimations;
+  animation-duration: 4s;
+}
+
+@keyframes titleAnimations {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+
+
+
 
 .col-md-3 {
     margin-top: 25% !important;
