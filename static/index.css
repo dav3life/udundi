@@ -22,11 +22,50 @@ html, body {
   }
 }
 
+.innerDiv{
+width:250px; 
+margin-left:25px;
+
+}
+
 .titleAnime{ 
   position: relative;
   animation-name: titleAnimations;
   animation-duration: 4s;
+  color: white; 
+  font-size: 175px;
 }
+
+@media only screen and (max-width: 600px) {
+ .custom{
+  display: none ;
+ }
+.titleAnime{
+ font-size: 100px;
+ }
+
+ .customDiv{
+  width: 450px !important;
+  margin-left: -15px !important;
+ }
+ .col-md-3 {
+  margin-top: 70% !important;
+  padding-left: 0px !important;
+ }
+
+ .customCol{
+  padding-top:180px;
+  margin-left: -75px !important;
+ }
+
+ .custom2{
+ 	margin-left:-45px;
+ 	width: 450px !important;
+ }
+
+}
+
+
 
 @keyframes titleAnimations {
   0%   {left:0px; top:0px;}
@@ -36,7 +75,10 @@ html, body {
   100% {left:0px; top:0px;}
 }
 
-
+.customTitle{
+color: white; 
+font-size: 175px;
+}
 
 
 

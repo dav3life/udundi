@@ -12,8 +12,8 @@
   <div class="row"> 
     <div class="col-md-3 customCol">
       <div class="custom2">
-        <h1 v-if="!show" style="color: white; font-size: 175px;" class="titleAnime"> [[ message ]]  </h1>
-        <div style="width:250px; margin-left:25px;">
+        <h1 v-if="!show" class="titleAnime"> [[ message ]]  </h1>
+        <div class="innerDiv">
           <img style="display: inline-block; width:25px; height:25px;" src="/static/Plus.svg" v-if="!show" @click="show = true">
           <p style="color:white; display: inline-block;" v-if="!show"> More Details</p>
         </div>
