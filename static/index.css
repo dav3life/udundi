@@ -10,6 +10,7 @@ html, body {
 .bounce-leave-active {
   animation: bounce-in .5s reverse;
 }
+
 @keyframes bounce-in {
   0% {
     transform: scale(0);
@@ -20,6 +21,7 @@ html, body {
   100% {
     transform: scale(1);
   }
+
 }
 
 .innerDiv{
@@ -28,19 +30,29 @@ margin-left:25px;
 
 }
 
+#one{
+ animation-iteration-count: 1;
+
+}
+
+.titleFont{
+font-size: 175px;
+}
+
 .titleAnime{ 
   position: relative;
   animation-name: titleAnimations;
+  animation-iteration-count: 1;
   animation-duration: 4s;
   color: white; 
-  font-size: 175px;
+  z-index:-5;
 }
 
 @media only screen and (max-width: 600px) {
  .custom{
   display: none ;
  }
-.titleAnime{
+.titleFont{
  font-size: 100px;
  }
 
@@ -68,6 +80,7 @@ margin-left:25px;
 
 
 @keyframes titleAnimations {
+  
   0%   {left:0px; top:0px;}
   25%  {left:200px; top:0px;}
   50%  {left:200px; top:200px;}
